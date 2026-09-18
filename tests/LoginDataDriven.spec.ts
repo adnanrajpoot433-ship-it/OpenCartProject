@@ -5,10 +5,7 @@ import { DataProvider } from "../utils/dataProviders"
 import { TestConfig } from "../test.config";
 import { HomePage } from "../pages/HomePage";
 
-//Load json test data from the file  logindata json 
-
 const JsonPath = "TestData/loginData.json";
-
 const JsonTestData = DataProvider.getTesdtDataFromJson(JsonPath);
 
 for (const data of JsonTestData) {
@@ -25,7 +22,6 @@ for (const data of JsonTestData) {
         const loginPage = new LoginPage(page);
         await loginPage.login(data.email, data.password)
 
-
         if (data.expected.toLowerCase() === "success") {
 
             const myAccountPage = new MyAccountPage(page);
@@ -39,6 +35,5 @@ for (const data of JsonTestData) {
         }
 
     })
-
 
 }
