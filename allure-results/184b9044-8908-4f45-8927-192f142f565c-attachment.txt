@@ -1,0 +1,8 @@
+Registration is completed
+Logout is Completed
+Login is Completed
+Products found: 3
+Found Product: MacBook
+Product added to the cart!
+🛒 Navigated to shopping cart!
+Shopping cart verification Completed!
